@@ -457,6 +457,10 @@ button {
 @media (max-width: 800px) {
   .photo-mosaic {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    inset: 0;
+    width: 100%;
+    padding-inline: 0;
+    transform: perspective(900px) rotateX(10deg) rotateY(8deg) scale(1.18);
   }
 
   .photo-column:nth-child(5) {
@@ -483,7 +487,7 @@ button {
   }
 
   .top-controls {
-    right: 0.8rem;
+    right: clamp(1rem, 4vw, 3.5rem);
     gap: 0.4rem;
   }
 
@@ -505,20 +509,13 @@ button {
   }
 
   .about-button {
-    top: auto;
-    right: 1rem;
-    bottom: 5.2rem;
-    left: auto;
+    top: clamp(1rem, 3.5vh, 2.5rem);
+    right: auto;
+    bottom: auto;
+    left: clamp(1rem, 4vw, 3.5rem);
     min-height: 2.35rem;
     padding: 0.55rem 0.9rem;
     font-size: 0.6rem;
-  }
-
-  .about-page .about-button {
-    top: 1rem;
-    right: auto;
-    bottom: auto;
-    left: 1rem;
   }
 
   .about-page {
