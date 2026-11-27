@@ -37,7 +37,6 @@ const photoColumns = [
       "Media/BG/47.webp",
       "Media/BG/52.webp",
       "Media/BG/36.webp",
-      "Media/BG/56.webp"
     ]
   },
   {
