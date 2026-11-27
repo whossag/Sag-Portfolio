@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09080d">
+  <title>About: Who'sSag</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <main class="hero about-page" aria-label="Sobre mí">
+    <div class="ambient-backdrop" aria-hidden="true"></div>
+    <div class="side-vignette" aria-hidden="true"></div>
+    <div class="edge-gradient" id="edge-gradient" aria-hidden="true"></div>
+    <div class="bottom-gradient" aria-hidden="true"></div>
+
+    <a class="control-button about-button" href="../index.html">Inicio</a>
+
+    <nav class="top-controls" aria-label="Navegación principal">
+      <button class="control-button" type="button">Contacto</button>
+      <div class="portfolio-control">
+        <button
+          class="control-button"
+          id="portfolio-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-options"
+        >
+          Portfolio
+          <span class="control-button__chevron" aria-hidden="true"></span>
+        </button>
+        <div class="portfolio-options" id="portfolio-options" hidden>
+          <button class="option-button option-button--video" type="button">
+            <span class="option-button__title">Video</span>
+            <img class="option-button__image" src="../Media/VideosWebP.webp" alt="">
+          </button>
+          <button class="option-button option-button--photo" type="button">
+            <span class="option-button__title">Fotografía</span>
+            <img class="option-button__image" src="../Media/Fotos.png" alt="">
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="about-card" aria-labelledby="about-title">
+      <div class="about-card__profile">
+        <img
+          class="about-card__portrait"
+          src="../Media/DSC03387_opt.webp"
+          alt="Retrato provisional de ejemplo"
+        >
+        <p class="about-card__subtitle">Realizador Audiovisual y Fotógrafo</p>
+      </div>
+
+      <div class="about-card__copy">
+        <p class="about-card__eyebrow">Sobre mí</p>
+        <h1 class="about-card__title" id="about-title">WHO IS SAG?</h1>
+        <p class="about-card__description">
+          No si aorita veo q pongo aca awantame un ratito.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

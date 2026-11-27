@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09080d">
+  <title>Portfolio | Who'sSag</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="hero" aria-label="Portada del portafolio">
+    <div class="ambient-backdrop" aria-hidden="true"></div>
+    <div class="photo-mosaic" id="photo-mosaic" aria-hidden="true"></div>
+    <div class="side-vignette" aria-hidden="true"></div>
+    <div class="edge-gradient" id="edge-gradient" aria-hidden="true"></div>
+    <div class="bottom-gradient" aria-hidden="true"></div>
+
+    <div class="identity">
+      <p class="identity__eyebrow">Realizador audiovisual &amp; fotógrafo</p>
+      <h1>WHO'S SAG</h1>
+    </div>
+
+    <nav class="top-controls" aria-label="Navegación principal">
+      <button class="control-button" type="button">Contacto</button>
+      <div class="portfolio-control">
+        <button
+          class="control-button"
+          id="portfolio-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-options"
+        >
+          Portfolio
+          <span class="control-button__chevron" aria-hidden="true"></span>
+        </button>
+        <div class="portfolio-options" id="portfolio-options" hidden>
+          <button class="option-button option-button--video" type="button">
+            <span class="option-button__title">Video</span>
+            <img
+              class="option-button__image"
+              src="Media/VideosWebP.webp"
+              alt=""
+            >
+          </button>
+          <button class="option-button option-button--photo" type="button">
+            <span class="option-button__title">Fotografía</span>
+            <img
+              class="option-button__image"
+              src="Media/Fotos.png"
+              alt=""
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <a class="control-button about-button" href="pages/about.html">Sobre mí</a>
+
+    <button
+      class="control-button motion-toggle"
+      id="motion-toggle"
+      type="button"
+      aria-pressed="false"
+    >
+      <span class="motion-toggle__label">Animaciones</span>
+      <span class="motion-toggle__state" id="motion-state">OFF</span>
+    </button>
+  </main>
+</body>
+</html>
