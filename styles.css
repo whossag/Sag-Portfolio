@@ -155,9 +155,9 @@ button {
 
 .about-page {
   display: grid;
-  min-height: 118svh;
+  min-height: 100svh;
   place-items: center;
-  padding: clamp(7rem, 15vh, 9rem) clamp(1rem, 3vw, 2rem) clamp(5rem, 10vh, 7rem);
+  padding: 4rem clamp(1rem, 3vw, 2rem);
 }
 
 .about-card {
@@ -519,7 +519,7 @@ button {
   }
 
   .about-page {
-    padding: 6rem 1rem 4rem;
+    padding: clamp(2rem, 6svh, 4rem) 1rem;
   }
 
   .about-card {
@@ -531,7 +531,7 @@ button {
   }
 
   .about-card__portrait {
-    max-height: 44vh;
+    max-height: clamp(9rem, 30svh, 18rem);
   }
 
   .about-card__subtitle {
